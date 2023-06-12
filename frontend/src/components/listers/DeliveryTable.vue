@@ -87,7 +87,7 @@
 
             this.newValue = {
                 'customerId': '',
-                'orderId': '',
+                'orderId': 0,
             }
         },
         methods: {

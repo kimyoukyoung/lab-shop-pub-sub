@@ -11,4 +11,5 @@ public class Order {
     private Integer qty;
     private String customerId;
     private Double amount;
+    private String status;
 }

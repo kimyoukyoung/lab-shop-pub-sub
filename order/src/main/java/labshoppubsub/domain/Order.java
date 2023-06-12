@@ -24,6 +24,8 @@ public class Order {
 
     private Double amount;
 
+    private String status;
+
     @PostPersist
     public void onPostPersist() {
         OrderPlaced orderPlaced = new OrderPlaced(this);
@@ -32,10 +34,10 @@ public class Order {
 
     @PrePersist
     public void onPrePersist() {
-        // Get request from Inventory
-        //labshoppubsub.external.Inventory inventory =
-        //    Application.applicationContext.getBean(labshoppubsub.external.InventoryService.class)
-        //    .getInventory(/** mapping value needed */);
+        // Get request from Order
+        //labshoppubsub.external.Order order =
+        //    Application.applicationContext.getBean(labshoppubsub.external.OrderService.class)
+        //    .getOrder(/** mapping value needed */);
 
     }
 
